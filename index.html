@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zot Pass</title>
+
+    <style>
+        .center {
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            padding-top: 10%;
+        }
+
+        .body {
+            background-color: black;
+        }
+
+        tr.spaceUnder>td {
+            padding-bottom: 1em;
+        }
+
+        .img {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body class='body'>
+    <table class='center'>
+        <tr class="spaceUnder">
+            <td>
+                <lbl id='Time'></lbl>
+            </td>
+        </tr>
+        <tr>
+            <td><img class='img' src=Image.jpg></td>
+        </tr>
+    </table>
+
+
+
+    <script>
+        const d = new Date()
+        console.log(d)
+        var element = document.getElementById('Time')
+        element.innerHTML = `Check-in Date: ${d.getMonth() + 1}-${d.getDate()}-${d.getFullYear()} 02:16:10 AM PST`
+    </script>
+</body>
+
+</html>
